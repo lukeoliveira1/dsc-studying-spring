@@ -29,7 +29,7 @@ public class Address {
 
     private String zipCode;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "client_id")
     private Client client;
 }
